@@ -4,23 +4,23 @@ function About() {
   return (
     <div className="grid gap-6 md:grid-cols-3">
       <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900">
-        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">Who I Am</h3>
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">About</h3>
         <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
-          A product-focused developer crafting modern, elegant experiences for the web. I blend
-          design thinking with robust engineering to ship delightful SaaS and portfolio products.
+          I’m Sachin, a product‑first builder blending design and engineering. I ship clear, elegant
+          web experiences and systems that scale.
         </p>
       </div>
       <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900">
-        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">What I Do</h3>
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">Focus</h3>
         <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
-          UI engineering, full‑stack architecture, and rapid prototyping. I love turning ideas into
-          polished, interactive interfaces using React, Tailwind, and modern tooling.
+          Product design, frontend engineering, design systems, and rapid prototyping using React,
+          Tailwind, and modern tooling.
         </p>
       </div>
       <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900">
-        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">Philosophy</h3>
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">Principles</h3>
         <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
-          Keep it simple, accessible, and fast. Sweat the details that make experiences feel alive.
+          Clarity over cleverness. Accessibility by default. Performance as a feature.
         </p>
       </div>
     </div>
@@ -95,21 +95,21 @@ function Experience() {
 function Projects() {
   const projects = [
     {
-      name: 'Neon Boards',
-      desc: 'Collaborative whiteboard for remote teams with real‑time cursors.',
-      tag: 'Web App',
+      name: 'Case Study — Design System',
+      desc: 'A scalable component system for faster, consistent shipping.',
+      tag: 'System',
       color: 'from-indigo-500 via-sky-500 to-teal-400',
     },
     {
-      name: 'PulseKit',
-      desc: 'Analytics kit for product‑led growth with clean visualizations.',
+      name: 'Case Study — Analytics App',
+      desc: 'Metrics that matter with clean, readable visualizations.',
       tag: 'Analytics',
       color: 'from-fuchsia-500 via-pink-500 to-rose-400',
     },
     {
-      name: 'FrameCast',
-      desc: 'Video snippets generator with templated brand styles.',
-      tag: 'Creator Tool',
+      name: 'Case Study — Creator Tool',
+      desc: 'Templates and workflows that empower creators to ship.',
+      tag: 'Tooling',
       color: 'from-amber-400 via-orange-500 to-rose-500',
     },
   ];
@@ -165,7 +165,7 @@ function Contact() {
       </div>
       <div className="flex items-center justify-between">
         <p className="text-xs text-neutral-500 dark:text-neutral-400">I usually reply within 24 hours.</p>
-        <button type="submit" className="inline-flex items-center justify-center rounded-md bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-100">
+        <button type="submit" className="inline-flex items-center justify-center rounded-md bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 dark:bg:white dark:text-neutral-900 dark:hover:bg-neutral-100">
           Send Message
         </button>
       </div>
@@ -176,7 +176,7 @@ function Contact() {
 export default function PortfolioSections() {
   return (
     <>
-      <Section id="about" eyebrow="About" title="A product-first, design-led developer">
+      <Section id="about" eyebrow="About" title="Product designer & frontend engineer">
         <About />
       </Section>
 
@@ -184,15 +184,15 @@ export default function PortfolioSections() {
         <Education />
       </Section>
 
-      <Section id="experience" eyebrow="Experience" title="Hands-on work that moves the needle">
+      <Section id="experience" eyebrow="Experience" title="Selected roles & impact">
         <Experience />
       </Section>
 
-      <Section id="projects" eyebrow="Projects" title="Selected work">
+      <Section id="projects" eyebrow="Projects" title="Case studies & work">
         <Projects />
       </Section>
 
-      <Section id="contact" eyebrow="Contact" title="Let’s build something great">
+      <Section id="contact" eyebrow="Contact" title="Let’s connect">
         <Contact />
       </Section>
     </>
